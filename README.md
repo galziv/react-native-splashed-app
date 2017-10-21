@@ -10,7 +10,7 @@ import SplashApp from 'react-native-splashed-app'
 // more code
 
 <SplashedApp imageSource={require('./App/Images/splash.jpg')} direction="up" duration="2000" withFadeOut>
-   <MainPage></MainPage>
+   <App></App>
 </SplashedApp>
 ```
 
@@ -18,12 +18,12 @@ If you use redux
 ```javascript
 <Provider store={store}>
    <SplashedApp imageSource={require('./App/Images/splash.jpg')} direction="up" duration="2000" withFadeOut>
-      <MainPage></MainPage>
+      <App></App>
    </SplashedApp>
 </Provider>
 ```
 
-###API
+## API
 imageSource - require('image/file/path').
 text - string to specify. will be used only if imageSource not supllied.
 baseColor - image can take a moment to load. this will determine the base color for the container.
