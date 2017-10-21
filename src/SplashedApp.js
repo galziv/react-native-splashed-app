@@ -50,7 +50,7 @@ const selectContent = (imageSource, text) => {
     let content;
 
     if (imageSource) {
-        content = <Image source={imageSource} style={[layout.spread]}/>;
+        content = <Image source={imageSource} style={{height: '100%', width: '100%'}}/>;
     } else {
         content = <Text>{text || 'provide imageSource or text'}</Text>;
     }
