@@ -79,7 +79,7 @@ export const SplashedApp = ({imageSource, text, direction, children, duration, w
         <View style={styles.container}>
             {children}
             <Animated.View
-                style={[container, styles.splash, {backgroundColor: baseColor || 'lightgray'}, getAnimationBaseStyle(direction, withFadeOut)]}>
+                style={[styles.container, styles.splash, {backgroundColor: baseColor || 'lightgray'}, getAnimationBaseStyle(direction, withFadeOut)]}>
                 {selectContent(imageSource, text)}
             </Animated.View>
         </View>
