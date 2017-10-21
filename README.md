@@ -2,6 +2,9 @@
 react-native app container to support splash screen functionallity
 
 ## Usage
+First add package:
+`npm install react-native-splashed-app --save`
+
 In your App.js
 
 ```javascript
@@ -30,9 +33,9 @@ If you use redux
 
 **baseColor** - image can take a moment to load. this will determine the base color for the container.
 
-**direction** - splash slide direction. available values up,down,left,right.
+**direction** - splash slide direction. available values up,down,left,right. up is default.
 
-**duration** - animation duration in miliseconds.
+**duration** - animation duration in miliseconds. 3000 miliseconds is default.
 
-**withFadeOut** - boolean specifying should splash also fade out.
+**withFadeOut** - boolean specifying should splash also fade out. false is default.
 
