@@ -50,7 +50,7 @@ const selectContent = (imageSource, text) => {
     let content;
 
     if (imageSource) {
-        content = <Image source={imageSource} style={{height: '100%', width: '100%'}}/>;
+        content = <Image source={imageSource} style={styles.spread}/>;
     } else {
         content = <Text>{text || 'provide imageSource or text'}</Text>;
     }
@@ -69,17 +69,22 @@ const styles = StyleSheet.create({
     },
     splash: {
         position: 'absolute'
+    },
+    spread: {
+        width: '100%',
+        height: '100%'
     }
 });
 
 export const SplashedApp = ({imageSource, text, direction, children, duration, withFadeOut, baseColor}) => {
+    debugger
     setTimeout(() => animate(duration, direction, withFadeOut), 2000);
 
     return (
         <View style={styles.container}>
             {children}
             <Animated.View
-                style={[styles.container, styles.splash, {backgroundColor: baseColor || 'lightgray'}, getAnimationBaseStyle(direction, withFadeOut)]}>
+                style={[styles.spread, styles.splash, {backgroundColor: baseColor || 'lightgray'}, getAnimationBaseStyle(direction, withFadeOut)]}>
                 {selectContent(imageSource, text)}
             </Animated.View>
         </View>
@@ -97,4 +102,3 @@ SplashedApp.PropTypes = {
 };
 
 export default SplashedApp;
-
