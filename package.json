@@ -1,0 +1,22 @@
+{
+  "name": "react-native-splashed-app",
+  "version": "1.0.0",
+  "description": "react-native app container to support splash screen functionallity",
+  "main": "src/SplashedApp.js",
+  "scripts": {  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galziv/react-native-splashed-app.git"
+  },
+  "keywords": [
+    "react-native",
+    "splash",
+    "splash-screen"
+  ],
+  "author": "Gal Ziv <gz0220@gmail.com> (https://github.com/galziv)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/galziv/react-native-splashed-app/issues"
+  },
+  "homepage": "https://github.com/galziv/react-native-splashed-app#readme"
+}
