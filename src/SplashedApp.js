@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
 });
 
 export const SplashedApp = ({imageSource, text, direction, children, duration, withFadeOut, baseColor}) => {
-    debugger
     setTimeout(() => animate(duration, direction, withFadeOut), 2000);
 
     return (
