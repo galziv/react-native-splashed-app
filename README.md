@@ -27,15 +27,10 @@ If you use redux
 ```
 
 ## API
-**imageSource** - require('image/file/path').
-
-**text** - string to show on splash. will be used only if imageSource not supllied.
-
-**baseColor** - image can take a moment to load. this will determine the base color for the container.
-
-**direction** - splash slide direction. available values up,down,left,right. up is default.
-
-**duration** - animation duration in miliseconds. 3000 miliseconds is default.
-
-**withFadeOut** - boolean specifying should splash also fade out. false is default.
+parameter|type|optional(default)
+imageSource|require('image/file/path')|if text supplied
+text|string|true
+baseColor|string|true
+direction|string|true(up)
+duration|number|true(3000)
 
