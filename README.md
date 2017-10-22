@@ -34,4 +34,5 @@ text|string|true
 baseColor|string|true
 direction|string|true(up)
 duration|number|true(3000)
+withFadeOut|bool|true(false)
 
