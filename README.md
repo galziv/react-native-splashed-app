@@ -28,6 +28,7 @@ If you use redux
 
 ## API
 parameter|type|optional(default)
+|-|-|
 imageSource|require('image/file/path')|if text supplied
 text|string|true
 baseColor|string|true
