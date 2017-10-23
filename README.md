@@ -30,9 +30,9 @@ If you use redux
 parameter|type|optional(default)
 |---|---|---|
 imageSource|require('image/file/path')|if text supplied
-text|string|true
-baseColor|string|true
-direction|string|true(up)
-duration|number|true(3000)
-withFadeOut|bool|true(false)
+text|string|yes
+baseColor|string|yes
+direction|string|yes (up)
+duration|number|yes (3000)
+withFadeOut|bool|yes (false)
 
