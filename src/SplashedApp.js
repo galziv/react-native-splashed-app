@@ -90,7 +90,7 @@ export const SplashedApp = ({imageSource, text, direction, children, duration, w
     );
 };
 
-SplashedApp.PropTypes = {
+SplashedApp.propTypes = {
     imageSource: PropTypes.string,
     text: PropTypes.string,
     direction: PropTypes.string,
