@@ -1,7 +1,6 @@
 {
   "name": "react-native-splashed-app",
-  "version": "1.0.6",
-  "readme": "check github page for usage and API",
+  "version": "1.0.7",
   "description": "react-native app container to support splash screen functionallity",
   "main": "src/SplashedApp.js",
   "scripts": {  },

@@ -17,17 +17,17 @@ const animate = (duration, direction, withFadeOut) => {
 
     switch (direction) {
         case "left":
-            toValue = -dimensions.width;
+            toValue = -dimensions.width - 200;
             break;
         case "right":
-            toValue = dimensions.width;
+            toValue = dimensions.width + 200;
             break;
         case "down":
-            toValue = dimensions.height;
+            toValue = dimensions.height + 200;
             break;
         case "up":
         default:
-            toValue = -dimensions.height;
+            toValue = -dimensions.height - 200;
             break;
     }
 
