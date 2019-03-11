@@ -76,8 +76,16 @@ const styles = StyleSheet.create({
     }
 });
 
-export const SplashedApp = ({imageSource, text, direction, children, duration, withFadeOut, baseColor}) => {
-    setTimeout(() => animate(duration, direction, withFadeOut), 2000);
+let timeoutId;
+
+export const SplashedApp = ({imageSource, text, direction, children, duration, timeout, withFadeOut, baseColor, hide}) => {
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+
+    if (hide == null || hide === true) {
+        timeoutId = setTimeout(() => animate(duration, direction, withFadeOut), timeout || 1);
+    }
 
     return (
         <View style={styles.container}>
@@ -91,7 +99,7 @@ export const SplashedApp = ({imageSource, text, direction, children, duration, w
 };
 
 SplashedApp.propTypes = {
-    imageSource: PropTypes.string,
+    imageSource: PropTypes.number,
     text: PropTypes.string,
     direction: PropTypes.string,
     baseColor: PropTypes.string,
